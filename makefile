@@ -16,3 +16,7 @@ $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.cc
 clean:
 	rm -rf $(OBJDIR)/*
 
+install:
+	g++ -Wall -o build/BiggestUnInt src/BiggestUnInt.cc
+	g++ -Wall -o build/HelloWorld src/HelloWorld.cc
+	g++ -Wall -o build/SimpleClass src/SimpleClass.cc
